@@ -1,0 +1,41 @@
+<students>
+	<student sr="1">
+		<sl> 23 </sl>
+		<name>
+			<first_name> John </first_name>
+			<last_name> Carter </last_name>
+		</name>
+		<admission_date>
+			<ad_day> 25 </ad_day>
+			<ad_month> 12 </ad_month>
+			<ad_year> 2015 </ad_year>
+		</admission_date>
+	</student>
+	
+	<student sr="2">
+		<sl> 29 </sl>
+		<name>
+			<first_name> Bob </first_name>
+			<last_name> Marshal </last_name>
+		</name>
+		<admission_date>
+			<ad_day> 13 </ad_day>
+			<ad_month> 01 </ad_month>
+			<ad_year> 1999 </ad_year>
+		</admission_date>
+	</student>
+	
+	<student sr="3">
+		<sl> 35 </sl>
+		<name>
+			<first_name> Clark </first_name>
+			<last_name> Kent </last_name>
+		</name>
+		<admission_date>
+			<ad_day> 17 </ad_day>
+			<ad_month> 06 </ad_month>
+			<ad_year> 2005 </ad_year>
+		</admission_date>
+	</student>
+
+</students>

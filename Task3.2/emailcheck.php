@@ -1,7 +1,7 @@
 <?php 
 
     if(isset($_POST['submit'])){
-        $email = $_POST['email'];
+        $email = trim($_POST['email']);
 
         if($email == null){
             echo "Null emailaddress";

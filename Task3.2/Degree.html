@@ -6,15 +6,16 @@
         <fieldset>
             <legend>Degree</legend>
             <table>
+                <form method="post" action="degreecheck.php" enctype=""> <br>
                 <tr>
                     <td>
-                        <input type="checkbox" name="" value="" /> SSC
-                        <input type="checkbox" name="" value="" /> HSC
-                        <input type="checkbox" name="" value="" /> BSC
+                        <input type="checkbox" name="degrees[]" value="" /> SSC
+                        <input type="checkbox" name="degrees[]" value="" /> HSC
+                        <input type="checkbox" name="degrees[]" value="" /> BSC
                     </td>
                 </tr>
             </table>
         </fieldset>
-        <input type="submit" name="" value="Submit" />
+        <input type="submit" name="submit" value="Submit" />
     </body>
 </html>

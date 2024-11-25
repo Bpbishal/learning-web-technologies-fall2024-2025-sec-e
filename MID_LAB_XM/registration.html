@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>
+            Registration Page
+        </title>
+    </head>
+        <body>
+            <form method="post" action="regcheck.php" enctype=""> <br>
+                <fieldset>
+                    <legend>Registration</legend>
+                    <table>
+                        <tr>
+                            <td>Name</td>
+                            <td><input type="text" name="username" value="" /></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td><input type="email" name="email" value="" placeholder="sample@example.com"/><br/></td>
+                        </tr>
+                        <tr>
+                            <td>Gender</td>
+                            <td>
+                                <input type="radio" name="gender" value="" /> Male
+                                <input type="radio" name="gender" value="" /> Female
+                                <input type="radio" name="gender" value="" /> Other    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Passoword:</td>
+                            <td><input type="password" name="password" value=""></td>
+                        </tr>
+                        <tr>
+                            <td>Confirm Passoword:</td>
+                            <td><input type="password" name="confirm_password" value=""></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="reset" name="reset" value="Reset">
+                                <input type="submit" name="submit" value="Submit">
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </body>
+
+</html>

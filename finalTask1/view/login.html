@@ -1,37 +1,29 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Name</title>
+    <title>Login Page</title>
 </head>
 <body>
-        <form method="post" action="logincheck.php" enctype=""> 
-            <fieldset style="width:400";>
-                <legend>Login</legend>
-                <table>
-                    <tr>
-                        <td>
-                            User ID
-                        </td>
-                        <td>
-                            <input type="text" name="ID" value="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Password
-                        </td>
-                        <td>
-                            <input type="password" name="password" value=""><br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <br>
-                        <input type="submit" name="signIn" value="Sign In">
-                        <a href="signup.html">Register</a>
+    <form method="post" action="../controller/logincheck.php">
+        <fieldset style="width: 20%; margin: 15px auto;">
+            <legend>Login</legend>
+            <table>
+                <tr>
+                    <td><label for="username">User Name:</label></td>
+                    <td><input type="text" id="userid" name="username" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" name="password" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="submit" name="submit" value="Sign In" />
+                        <a href="registration.html">Register</a>
                     </td>
-                    </tr>
-                </table>
-            </fieldset>
-        </form>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
 </body>
 </html>

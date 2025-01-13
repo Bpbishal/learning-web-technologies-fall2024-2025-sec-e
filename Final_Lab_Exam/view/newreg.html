@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Author Register</title>
+    <script>
+        function validateForm() {
+            let authName = document.getElementById("authname").value.trim();
+            let authUsername = document.getElementById("authusername").value.trim();
+            let authPhone = document.getElementById("authphone").value.trim();
+            let authPassword = document.getElementById("authpassword").value.trim();
+
+            if (!authName) {
+                alert("Author Name is required.");
+                return false;
+            }
+            if (!authUsername) {
+                alert("Username is required.");
+                return false;
+            }
+            if (!authPhone) {
+                alert("Contact Number is required.");
+                return false;
+            }
+            if (!authPassword) {
+                alert("Password is required.");
+                return false;
+            }
+
+            if (!/^[0-9]{10}$/.test(authPhone)) {
+                alert("Invalid Contact Number. Please enter a valid 10-digit phone number.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h1>New Author</h1>
+
+    <form action="../controller/add_author.php" method="POST" onsubmit="return validateForm()">
+        <table border="1" cellspacing="0" cellpadding="5">
+            <tr>
+                <td>Author Name:</td>
+                <td><input type="text" id="authname" name="authname"  /></td>
+            </tr>
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" id="authusername" name="authusername"  /></td>
+            </tr>
+            <tr>
+                <td>Contact No:</td>
+                <td><input type="text" id="authphone" name="authphone"  /></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" id="authpassword" name="authpassword"  /></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" name="submit" value="Submit" />
+                    <a href="./dashboard.php">Back</a>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
